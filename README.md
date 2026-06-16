@@ -40,3 +40,15 @@ Dockerised Mosquitto broker used for message transport.
 - MQTT
 - PostgreSQL
 - Docker
+
+## Extra Details
+
+There is an exploration into Elliptic Curve Direct Anonymous Attestation (ECDAA) and its feasibility with the version of tss-esapi used at the time of development. 
+This part of the project served as extension to determine whether the current system could
+be anonymised and continue working as intended.
+
+The result is that a full system implementation was not feasible purely in Rust with the aid
+of the tss-esapi crate, yet includes /scripts within SageMath to aid the process.
+
+As part of this project, a custom fork of the tss-esapi repository was created to facilitate
+the development of the TPM2_Commit command as this was missing from the repository at the time.
