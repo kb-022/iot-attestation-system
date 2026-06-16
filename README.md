@@ -23,6 +23,7 @@ It is important to note that the data itself is not trusted, only that the data 
 
 ### Gateway Device
 Rust-based firmware running on Raspberry Pi with TPM integration for hardware-backed signing.
+The LetsTrust TPM is attached to the Raspberry Pi for hardware integration.
 
 ### Edge Device
 Simulated Rust-based edge device for temperature sensing.
@@ -52,3 +53,16 @@ of the tss-esapi crate, yet includes /scripts within SageMath to aid the process
 
 As part of this project, a custom fork of the tss-esapi repository was created to facilitate
 the development of the TPM2_Commit command as this was missing from the repository at the time.
+
+## Video Examples
+Examples can be found in /docs/videos
+
+### System Demo
+ - This highlights the main system in effect on an already enrolled client.
+
+### Enrollment Demo 
+- This highlights the main system in effect with a client enrolling.
+
+### ECDAA Demo 
+- This demonstrates the working implementation of TPM2_Commit.
+
